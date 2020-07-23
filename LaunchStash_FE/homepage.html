@@ -1,39 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width = device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Launch Stash - Curated source for your product launch </title>
-        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="./layout.css">
+        <link rel="stylesheet" href="./site.css">
+        <link rel="stylesheet" href="./homepage.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8362532bca.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
-        <div class="header">
-            <nav>
-                <div class="logo">
-                    Logo 
+        <!--Navigation Bar-->
+        <div class="container-fluid stashContainer">
+            <div class="row">
+                <div class="header w-100 sticky-top">
+                    <div class="bg"></div>
+                    <div class="headerBar mx-xl-5">
+                        <nav id="header" class="navbar navbar-expand-xl mx-xl-5">
+                            <a class="col-xl-3 col-8" href="#" target="_blank">
+                                <img class="nav-logo w-100" style="max-width: 10.8125rem" src="./images/logo.svg" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".menu"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse col-xl-9 menu">
+                                <div class="col-xl-7 mr-auto">
+                                </div>
+    
+                                <ul class="navbar-nav">
+                                    <li class="nav-item my-auto d-flex">
+                                        <a id="profile" class="nav-link" href="#">
+                                            SIGN UP/LOG IN
+                                        </a>
+                                        <div class="help">?</div>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-                <div class="slogan">
-                    curated checklist for your smooth product launch 
+                <div class="mx-xl-5 w-100 mt-xl-5">
+                    <div class="mx-xl-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-3 leftNav">
+                                    <nav class="navbar navbar-expand-xl p-0">
+                                        <div class="collapse navbar-collapse menu">
+                                            <ul class="nav flex-column" id="left-nav">
+                                                 <!--Checklist-->
+                                                <li class="nav-item">
+                                                    <a class="nav-link d-flex align-items-center parent" href="#"
+                                                        data-toggle="collapse" aria-expanded="true"
+                                                        data-target="#collapseOne">
+                                                        CHECKLIST
+                                                    </a>
+                                                    <div id="collapseOne" class="child-nav collapse show ml-3">
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Pre-Launch</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Beta Access</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Launch</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">After Launch</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!--End Checklist-->
+                                                <!--Resource-->
+                                                <li class="nav-item mt-4">
+                                                    <a class="nav-link d-flex align-items-center parent" href="#"
+                                                        data-toggle="collapse" aria-expanded="true"
+                                                        data-target="#collapseTwo">
+                                                        RESOURCES
+                                                    </a>
+                                                    <div id="collapseTwo" class="child-nav collapse show ml-3">
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Promotion Platform</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Audience Target</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Article Writing</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Customer Support</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Tracking Tools</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Beta Test Tool List</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!--End Resource-->
+                                                <li class="nav-item mt-4">
+                                                    <img src="./images/line.svg"/>
+                                                </li>
+                                                <!-- Share on SNS-->
+                                                <li class="nav-item mt-4">
+                                                    <a class="nav-link d-flex align-items-center parent" href="#"
+                                                        data-toggle="collapse" aria-expanded="true"
+                                                        data-target="#collapseThree">
+                                                        SHARE
+                                                    </a>
+                                                    <div id="collapseThree" class="child-nav collapse show ml-3">
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                                    <div class="icon-link">
+                                                                        <img src="./images/facebook.svg" />
+                                                                    </div>
+                                                                    Facebook
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                                    <div class="icon-link">
+                                                                        <img src="./images/twitter.svg" />
+                                                                    </div>
+                                                                    Twitter
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                                    <div class="icon-link">
+                                                                        <img src="./images/linkedin.svg" />
+                                                                    </div>
+                                                                    Linkedin
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link d-flex align-items-center" href="#">
+                                                                    <div class="icon-link">
+                                                                        <img src="./images/mail.svg" />
+                                                                    </div>
+                                                                    Email
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!-- End Share on SNS-->
+                                                <li class="nav-item mt-4">
+                                                    <a class="nav-link d-flex align-items-center parent" href="#">
+                                                        FEEDBACK
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item mt-4">
+                                                    <a class="nav-link d-flex align-items-center parent" href="#">
+                                                        ABOUT
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <!--CheckList Navigation Bar-->
+                                <div class="col-xl-9">
+                                    <div class="checkList">
+                                        <div class="title">CHECKLIST </div>
+                                        <div class="container-fluid mt-4">
+                                            <div class="row">
+                                                <div class="itemContainer col-xl-3 col-6">
+                                                    <div class="checkListItem">
+                                                        <div class="top">
+                                                        </div>
+                                                        <div class="bottom">
+                                                        </div>
+                                                        <div class="text">
+                                                            Pre-Launch
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="itemContainer col-xl-3 col-6">
+                                                    <div class="checkListItem">
+                                                        <div class="top">
+                                                        </div>
+                                                        <div class="bottom">
+                                                        </div>
+                                                        <div class="text">
+                                                            Beta Access
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="itemContainer col-xl-3 col-6">
+                                                    <div class="checkListItem">
+                                                        <div class="top">
+                                                        </div>
+                                                        <div class="bottom">
+                                                        </div>
+                                                        <div class="text">
+                                                            Launch
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="itemContainer col-xl-3 col-6">
+                                                    <div class="checkListItem">
+                                                        <div class="top">
+                                                        </div>
+                                                        <div class="bottom">
+                                                        </div>
+                                                        <div class="text">
+                                                            After Launch
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End CheckList Navigation Bar-->
+                                    <!--Resource Navigation Bar-->
+                                    <div class="resources mt-5">
+                                        <div class="title">RESOURCES </div>
+                                        <div class="row mt-3">
+                                            <div class="col-xl-4">
+                                                <div class="resourcesItem">
+                                                    <div class="text">
+                                                        Promotion Platform
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="resourcesItem">
+                                                    <div class="text">
+                                                        Audience Target
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="resourcesItem">
+                                                    <div class="text">
+                                                        Article Writing
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="resourcesItem">
+                                                    <div class="text">
+                                                        Customer Support
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="resourcesItem">
+                                                    <div class="text">
+                                                        Tracking Tools
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="resourcesItem">
+                                                    <div class="text">
+                                                        Beta Test Tool List
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
                 </div>
-            </nav>
-
-        </div>
-        <!--Left Side Nav Bar-->
-        <div class="nav-containter">
-            <div class="wrapper">
-                <nav>
-                    <ul class="nav-items">
-
-                    </ul>
-
-                </nav>
-
             </div>
         </div>
-        <!--Left Side Nav Bar-->
-
-        <script src="main.js"></script>
+        <!--End Resource Navigation Bar-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
     </body>
 </html>
